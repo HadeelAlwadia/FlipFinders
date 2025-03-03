@@ -29,9 +29,8 @@ function App() {
   const browserRouter = createBrowserRouter(routes);
 
   return (
-    <GameModeProvider>
-      <RouterProvider router={browserRouter} />
-    </GameModeProvider>
+    <GameModeProvider children={      <RouterProvider router={browserRouter} />
+  } />
   )
 }
 
